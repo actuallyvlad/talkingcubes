@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Background pattern from Subtle Patterns -->
+<html lang="en" class="gr__threejs_org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>Talking Cubes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
+    <link rel="icon" href="favicon.ico?v=2">
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <script src="./js/three.js"></script>
+    <script src="./js/stats.min.js"></script>
+    <script src="./js/TrackballControls.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/socketInit.js"></script>
+    <script src="./js/talkingCubes.js"></script>
+    
+    <div id="languageDisplay" style="">
+      <span id="languageDisplayText"></span>
+    </div>
+
+    <canvas width="1920" height="879" style="width: 1920px; height: 879px;"></canvas>
+    
+    <div id="fpsCounter">
+      <canvas width="80" height="48" style="width: 80px; height: 48px; display: block;"></canvas>
+    </div>
+    
+    <div id="footer">
+      based on <a href="http://threejs.org/" target="_blank">three.js</a> webgl - 
+      <a href="https://threejs.org/examples/webgl_interactive_cubes.html">interactive cubes</a> 
+        and 
+      <a href="https://www.sitepoint.com/visualizing-a-twitter-stream-in-vr-with-three-js-and-node/">VR Twitter World</a>
+    </div>
+  </body>
+</html>
